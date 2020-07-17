@@ -5,7 +5,7 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "react-native start --reset-cache",
     "test": "jest",
     "lint": "standard --verbose | snazzy",
     "clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm cache clean --force",
@@ -40,8 +40,9 @@
     "react-native-device-info": "^5.3.0",
     "react-native-gesture-handler": "1.3.0",
     "react-native-i18n": "2.0.14",
-    "react-native-vector-icons": "6.1.0",
-    "react-navigation": "3.11.0",
+    "react-native-screens": "2.9.0",
+    "react-native-vector-icons": "7.0.0",
+    "react-navigation": "3.13.0",
     "react-navigation-redux-helpers": "^4.0.1",
     "react-navigation-stack": "^1.10.3",
     "react-navigation-tabs": "^2.5.6",
@@ -50,7 +51,9 @@
     "redux-persist": "^5.10.0",
     "redux-saga": "^1.1.3",
     "reduxsauce": "^1.1.1",
-    "seamless-immutable": "^7.1.4"
+    "reselect": "^4.0.0",
+    "seamless-immutable": "^7.1.4",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
@@ -114,5 +117,8 @@
       "FormData",
       "React$Element"
     ]
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
